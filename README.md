@@ -41,3 +41,21 @@ Využít lze rovněž službu Google Collaboratory, která na omezenou dobu (až
   - SVM: 3 body
     - Validační skóre > 30 %: +1 bod
 - **deadline: 20.10.2021 7:59**
+
+### 2. Vícevrstvý perceptron
+- Notebook: [multilayer-perceptron.ipynb](multilayer-perceptron.ipynb)
+- Bodování:
+  - Dvouvrstvý perceptron: 4 body
+  - Kromě sigmoid i ReLU: 2 body
+  - Validační skóre < 20 %: 0 bodů
+  - Validační skóre > 30 %: 2 body
+  - Validační skóre > 40 %: 4 body
+- **deadline: 27.10.2021 7:59**
+
+### BONUS: Vícevrstvý perceptron
+- Notebook: [multilayer-perceptron.ipynb](multilayer-perceptron.ipynb)
+- Úkolem je rozšířit notebook o implementaci konfigurovatelného modelu s libovolným počtem vrstev.
+- Bodování:
+  - Obecná feed-forward síť: 6 bodů
+  - Skóre > 50 %: 4 body
+- **deadline: 31.1.2022 7:59**
