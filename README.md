@@ -59,3 +59,11 @@ Využít lze rovněž službu Google Collaboratory, která na omezenou dobu (až
   - Obecná feed-forward síť: 6 bodů
   - Skóre > 50 %: 4 body
 - **deadline: 31.1.2022 7:59**
+
+### 3. Úvod do konvoluce
+- Notebook: [conv-intro.ipynb](conv-intro.ipynb)
+- Bodování:
+  - konvoluce po kanálech: 2 body
+  - více filtrů najednou: 3 body
+  - konvoluce jako vrstva: 5 bodů
+- **deadline: 3.11.2021 7:59**
