@@ -67,3 +67,12 @@ Využít lze rovněž službu Google Collaboratory, která na omezenou dobu (až
   - více filtrů najednou: 3 body
   - konvoluce jako vrstva: 5 bodů
 - **deadline: 3.11.2021 7:59**
+
+### 4. Klasifikace obrázků konvolučními sítěmi
+- Notebook: [conv-classification.ipynb](conv-classification.ipynb)
+- Bodování:
+  - Validační skóre < 80 %: 0 bodů
+  - Validační skóre > 80 %: 5 bodů
+  - Validační skóre > 90 %: 10 bodů
+  - Validační skóre > 95 %: +5 bodů
+- **deadline: 24.11.2021 7:59**

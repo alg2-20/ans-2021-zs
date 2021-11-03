@@ -376,3 +376,42 @@ def check_gradients(model: Layer, inputs, doutputs, input_names=None, h=None):
     
     return grads, grads_num
 
+
+def predict_and_show(rgb, model, transform, classes=None):
+    """
+    vstupy:
+        rgb ... numpy.ndarray formatu vyska x sirka x kanaly a typu np.uint8
+        model ... objekt typu nn.Module
+        transform ... predzpracovani obrazku, ktere provede pred pruchodem siti
+        classes ... seznam trid, bude `None` nebo `list` stejne dlouhy jako pocet vystupnich skore `model`u
+    """
+    # prepnout model do testovaciho rezimu
+    model.eval()
+    
+    # prevod do torch
+    x = transform(rgb)
+    x = x.to(next(model.parameters()).device)
+    x = x[None]
+    
+    # dopredny pruchod
+    score = model(x)
+    prob = F.softmax(score, dim=1)
+    
+    # prevod do numpy
+    score = score.detach().cpu().numpy().squeeze()
+    prob = prob.detach().cpu().numpy().squeeze()
+
+    # tridy
+    if classes is None:
+        classes = [str(i) for i in range(prob.shape[0])]
+    
+    # vykresleni matplotlib
+    plt.figure(figsize=(5, 5))
+    plt.imshow(np.array(rgb))
+    ids = np.argsort(-score)
+    for i, ci in enumerate(ids[:10]):
+        text = '{:>5.2f} %  {}'.format(100. * prob[ci], classes[ci])
+        if len(text) > 40:
+            text = text[:40] + '...'
+        plt.gcf().text(1., 0.8 - 0.075 * i, text, fontsize=24)
+    plt.subplots_adjust()
