@@ -76,3 +76,14 @@ Využít lze rovněž službu Google Collaboratory, která na omezenou dobu (až
   - Validační skóre > 90 %: 10 bodů
   - Validační skóre > 95 %: +5 bodů
 - **deadline: 24.11.2021 7:59**
+
+
+### 5. Generování textu znakovou RNN
+- Notebook: [char-rnn.ipynb](char-rnn.ipynb)
+- Bodování:
+  - Mód `argmax` funkce `sample`: 1 bod
+  - Mód `proportional` funkce `sample`: 1 bod
+  - Funkční funkce `sample`: 1 bod
+  - Funkční generování textu: 2-7 bodů dle smysluplnosti
+  - Vlastní data: +4 body
+- **deadline: 1.12.2021 7:59**
