@@ -87,3 +87,20 @@ Využít lze rovněž službu Google Collaboratory, která na omezenou dobu (až
   - Funkční generování textu: 2-7 bodů dle smysluplnosti
   - Vlastní data: +4 body
 - **deadline: 1.12.2021 7:59**
+
+### 6. Adversarial examples
+- Notebook: [adversarial-examples.ipynb](adversarial-examples.ipynb)
+- Bodování:
+  - Obrázek 224 x 224, MSE < 1: 5 bodů
+    - Více než 99 % `predict_and_show`: +1 bod
+  - Původní rozlišení, MSE < 1: 3 body
+    - Více než 99 % `predict_and_show`: +1 bod
+- **deadline: 12.1.2022 7:59**
+
+### 7. Transfer stylu
+- Notebook: [neural-style.ipynb](neural-style.ipynb)
+- Bodování:
+  - Funkční rekonstrukce obsahu: +2 body
+  - Funkční rekonstrukce stylu: +3 body
+  - Funkční přenos stylu: +5 bodů
+- **deadline: 12.1.2022 7:59**
